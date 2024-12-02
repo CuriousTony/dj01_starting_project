@@ -1,0 +1,23 @@
+{% extends 'zeroapp/layout.html' %}
+{% load static %}
+{% block title %}
+    <title>О компании</title>
+{% endblock %}
+
+{% block content %}
+    <h1 class="text-center">"Innovatech Solutions"</h1>
+    <div class="container my-4">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <img src="{% static 'zeroapp/img/about.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-text">"Innovatech Solutions" — лидер в технологических инновациях. Мы предлагаем
+                        качественные решения для бизнеса: разработка ПО, консалтинг, кибербезопасность. Свяжитесь с нами!</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
