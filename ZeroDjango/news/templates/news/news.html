@@ -1,0 +1,14 @@
+{% extends 'zeroapp/layout.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Лента новостей</title>
+{% endblock %}
+
+{% block content %}
+    <h1 class="text-center">Здесь будет лента новостей</h1>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <img src="{% static 'news/img/press.jpg' %}" class="img-fluid" alt="Centered Image">
+    </div>
+
+{% endblock %}
