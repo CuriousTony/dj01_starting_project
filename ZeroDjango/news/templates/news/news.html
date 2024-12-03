@@ -6,9 +6,16 @@
 {% endblock %}
 
 {% block content %}
-    <h1 class="text-center">Здесь будет лента новостей</h1>
-    <div class="d-flex justify-content-center align-items-center vh-100">
-        <img src="{% static 'news/img/press.jpg' %}" class="img-fluid" alt="Centered Image">
-    </div>
-
+    <h1 class="text-center">Лента новостей</h1>
+    {% for article in news %}
+        <div class="container mt-3">
+            <div class="border rounded p-4 bg-light">
+                <h3 class="mb-3 text-left">{{ article.title }}</h3>
+                <p class="mb-2 text-left">{{ article.intro }}</p>
+                <p class="text-left">{{ article.content }}</p>
+                <p class="text-end">{{ article.author }}</p>
+                <p class="text-end">{{ article.date }}</p>
+            </div>
+        </div>
+    {% endfor %}
 {% endblock %}
